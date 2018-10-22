@@ -54,6 +54,15 @@ let package = Package(
                 "Utility",
             ]
         ),
+
+        // Programmatic access to SwiftPM public commands API as a dependency.
+        .library(
+            name: "SwiftPMCommands",
+            type: .dynamic,
+            targets: [
+                "Commands"
+            ]
+        ),
     ],
     targets: [
         // The `PackageDescription` targets are special, they define the API which
