@@ -25,6 +25,7 @@ let package = Package(
             targets: [
                 "clibc",
                 "SPMLibc",
+                "Commands",
                 "POSIX",
                 "Basic",
                 "Utility",
@@ -52,15 +53,6 @@ let package = Package(
                 "POSIX",
                 "Basic",
                 "Utility",
-            ]
-        ),
-
-        // Programmatic access to SwiftPM public commands API as a dependency.
-        .library(
-            name: "SwiftPMCommands",
-            type: .dynamic,
-            targets: [
-                "Commands"
             ]
         ),
     ],
